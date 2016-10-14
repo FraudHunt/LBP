@@ -1,7 +1,5 @@
-# LBP
+# Adapted Loopy Belief Propagation Algorithm (LBP)
 Loopy Belief Propagation (LBP) approach to formulate the problem of detecting fraudulent user accounts as a network classification task.
-
-#Adapted Loopy Belief Propagation Algorithm.
 
 Inputs:
 g: a graph of type networkx.classes.graph.Graph. One can get to this type from 
@@ -12,14 +10,19 @@ See the Networkx module in python for more details.
 Example of format of the csv file is:
 
 node1 node2 weight
+
   a     b      5
+  
   a     c      10
+  
   .     .       .
+  
   .     .       .
 
 Then one can do :
 
 datafile=pd.read_csv("csvfile.csv")
+
 g=nx.from_pandas_dataframe(datafile, 'id1', 'id2', ['weight'])
 
 delta: value related to the compatibility potentials. It is in [0,1]. 
@@ -29,7 +32,7 @@ an extensive numerical experimentation.
 
 
 It makes use of the functions: compatibility, prods, prodd, prodnode. Details
-about those function is found below. 
+about those function is found in the aux_lbp file. 
 
 Outputs:
 
