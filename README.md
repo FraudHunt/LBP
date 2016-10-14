@@ -1,5 +1,6 @@
 # Adapted Loopy Belief Propagation Algorithm (LBP)
-Loopy Belief Propagation (LBP) approach to formulate the problem of detecting fraudulent user accounts as a network classification task.
+Loopy Belief Propagation (LBP) approach to formulate the problem of detecting fraudulent user accounts as a network classification task. The algorithm assigns labels to the user account nodes of the co-review graph. The
+graph is modeled as a pairwise Markov Random Field.
 
 Inputs:
 g: a graph of type networkx.classes.graph.Graph. One can get to this type from 
